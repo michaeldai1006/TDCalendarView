@@ -1,21 +1,19 @@
-//
-//  TDCalendarView.swift
-//  TDCalendarViewExample
-//
-//  Created by Michael Dai on 3/22/18.
-//  Copyright © 2018 Tiancheng Dai. All rights reserved.
-//
 
 import UIKit
 
 class TDCalendarView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    init(frame: CGRect, backgroundColor color: UIColor?) {
+        super.init(frame: frame)
+        
+        // Background color
+        if let color = color {
+            self.backgroundColor = color
+        }
     }
-    */
-
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 }
